@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1ebfc1;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* Common Css ========================================================*/
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  margin: 0 auto;
+  max-width: calc(100% - 24px);
+}
+.btn {
+  display: inline-block;
+  min-width: 186px;
+  padding: 20px 12px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 14px;
+  line-height: 1.55;
+  color: #fff;
+  background: #2ac9bf;
+}
+.heading {
+  color: #0d1111;
+  font-weight: 700;
+}
+.lv1 {
+  font-size: 6.2rem;
+  line-height: 1.16; /* 116.129% */
+}
+.lv2 {
+  font-size: 4.2rem;
+  line-height: 1.34; /* 133.333% */
+}
+.lv3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.lv4 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+}
+/* Header */
+.header {
+  padding-top: 44px;
+}
+.header.fixed {
+  position: sticky;
+  top: -44px;
+  background: #fff;
+  z-index: 1;
+}
+.header .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 39px;
+}
+.header .logo {
+  width: 127px;
+  height: 37px;
+}
+.header .nav-item a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+}
+.header .nav-item.item-active a,
+.header .nav-item a:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #2f3a3b;
+}
+.header .active {
+  display: flex;
+  align-items: center;
+}
+.header .active a {
+  color: #494949;
+  font-size: 1.6rem;
+}
+.header .active .active-btn {
+  text-align: center;
+  min-width: 108px;
+  padding: 12px 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-left: 24px;
+}
+/* Hero */
+.hero {
+  margin: 42px 0 79px 0;
+}
+.hero .body {
+  display: flex;
+}
+.hero .info {
+  margin: auto 0;
+  width: 39.2%;
+}
+.hero .info .sub-title {
+  font-size: 1.4rem;
+  color: #767e7e;
+}
+.hero .info .heading.lv1 {
+  margin-top: 18px;
+}
+.hero .info .desc {
+  margin-top: 46px;
+  width: 374px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #9da6a5;
+}
+.hero .cta {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+}
+.hero .cta .play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 52px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.hero .image {
+  position: relative;
+  margin-left: auto;
+  width: 641px;
+  height: 631px;
+}
+.hero .image .thumb {
+  display: flex;
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+  margin-left: auto;
+}
+.hero .image .course {
+  position: absolute;
+  bottom: 407px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  padding: 18px 25px;
+  width: 157px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .course .course-icon {
+  width: 36px;
+  height: 40px;
+}
+.hero .course .sub-icon {
+  position: absolute;
+  left: 29px;
+  bottom: 26px;
+}
+.hero .course .heading {
+  margin-left: 16px;
+  width: 55px;
+}
+.hero .schedules {
+  position: absolute;
+  bottom: 46px;
+  display: inline-block;
+  padding: 16px 25px 23px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .schedules .heading {
+  text-align: center;
+}
+.hero .schedules .img {
+  margin-top: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero .schedules img {
+  width: 74px;
+  height: 6px;
+}
+.hero .students {
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+  display: inline-block;
+  padding: 17px 35px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .students .img-list {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.hero .students .img-item,
+.hero .students .img-list img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-left: -7px;
+  object-fit: cover;
+}
+.hero .students .img-list img:first-of-type {
+  margin-left: 0;
+}
+.hero .students .img-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--primary-color);
+}
+/* Features ================================================================= */
+.features {
+  margin-top: 65px;
+  padding: 65px;
+}
+.features .info {
+  width: 50.5%;
+}
+.features .info .title {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #767e7e;
+  word-spacing: 2.5px;
+}
+.features .info .heading.lv2 {
+  margin-top: 18px;
+}
+.features .info .desc {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  color: #767e7e;
+  line-height: normal;
+}
+.features .content {
+  margin-top: 80px;
+  width: 87.5%;
+}
+.features .content .features-list {
+  display: flex;
+  justify-content: space-between;
+}
+.features .features-item {
+  width: 224px;
+}
+.features .features-item:first-child {
+  width: 168px;
+}
+.features .features-item .heading.lv3 a {
+  color: #0d1111;
+}
+.features .features-item .icon {
+  display: block;
+  width: 102px;
+  height: 106px;
+}
+.features .features-item .heading.lv3 {
+  margin-top: 26px;
+}
+.features .features-item .desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.6875; /* 168.75% */
+}
+/* Popular */
+.popular {
+  padding: 65px 0;
+}
+.popular .info .title {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  word-spacing: 2.5px;
+}
+.popular .info .heading {
+  margin-top: 18px;
+}
+.popular .info .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .info .row .desc {
+  width: 45%;
+  margin-top: 19px;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+  color: #767e7e;
+}
+.popular .info .row .view {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: var(--primary-color);
+}
+.popular .course-body {
+  margin-top: 79px;
+}
+.popular .course-body .course-list {
+  display: flex;
+  gap: 47px;
+}
+.popular .course-item {
+  position: relative;
+  width: 33.33%;
+  height: 517px;
+}
+.popular .course-item .image {
+  width: 100%;
+  height: 393px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.popular .course-item .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  width: 325px;
+  height: 195px;
+  padding: 18px 25px 29px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+.popular .content .heading.lv3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.popular .content .fee {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  color: #767e7e;
+}
+.popular .content .fee strong {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: normal;
+  color: #0d1111;
+}
+.popular .content .desc {
+  margin-top: 6px;
+  font-size: 1.4rem;
+  color: #9da6a5;
+  line-height: normal;
+}
+.popular .content .foot {
+  margin-top: 18px;
+}
+.popular .content .foot span {
+  color: #9da6a5;
+  font-size: 1.4rem;
+  line-height: normal;
+  margin-right: 10px;
+}
+.popular .content .foot span::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+/* Data=============================================================================== */
+.data {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.data .main-content {
+  width: 862px;
+}
+.data .data-list {
+  display: flex;
+  justify-content: space-between;
+}
+.data .data-item {
+  text-align: center;
+}
+.data .data-item .value {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.data .data-item .desc {
+  margin-top: 11px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+}
