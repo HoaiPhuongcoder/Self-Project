@@ -31,12 +31,12 @@ a {
   border-radius: 14px;
   line-height: 1.55;
   color: #fff;
+  border: 1px solid #2ac9bf;
   background: #2ac9bf;
 }
 .btn:hover {
   color: #2ac9bf;
   background: #fff;
-  border: 1px solid #2ac9bf;
 }
 .heading {
   color: #0d1111;
@@ -142,12 +142,12 @@ a {
   line-height: 1.8;
   color: #9da6a5;
 }
-.hero .cta {
+.hero .hero-cta {
   margin-top: 52px;
   display: flex;
   align-items: center;
 }
-.hero .cta .play {
+.hero .hero-cta .play {
   display: inline-flex;
   align-items: center;
   justify-content: center;
