@@ -6,6 +6,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -31,6 +32,11 @@ a {
   line-height: 1.55;
   color: #fff;
   background: #2ac9bf;
+}
+.btn:hover {
+  color: #2ac9bf;
+  background: #fff;
+  border: 1px solid #2ac9bf;
 }
 .heading {
   color: #0d1111;
@@ -106,6 +112,10 @@ a {
   font-weight: 600;
   color: var(--primary-color);
   margin-left: 24px;
+}
+.header .active .active-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
 }
 /* Hero */
 .hero {
@@ -348,6 +358,10 @@ a {
   border-radius: 8px;
   object-fit: cover;
 }
+.popular .course-item .image:hover {
+  opacity: 0.35;
+  background: #d0efed;
+}
 .popular .course-item .content {
   position: absolute;
   bottom: 0;
@@ -361,9 +375,10 @@ a {
   background: #fff;
   box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
 }
-.popular .content .heading.lv3 {
+.popular .content .heading.lv3 a {
   font-size: 2.2rem;
   font-weight: 700;
+  color: #0d1111;
 }
 .popular .content .fee {
   margin-top: 16px;
@@ -429,3 +444,193 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+/* Famous ==============================================================================================*/
+.famous {
+  margin-top: 134px;
+  padding: 65px 0;
+}
+.famous-body {
+  display: flex;
+}
+.famous .info {
+  margin: auto 0;
+  width: 35.8%;
+}
+.famous .info .quotes {
+  width: 36px;
+  height: 29px;
+}
+.famous .info .content {
+  margin-top: 27px;
+  font-size: 3.2rem;
+  line-height: 1.5; /* 150% */
+  color: #5d6564;
+}
+.famous .info .title {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  font-size: 1.6rem;
+  line-height: normal;
+  color: #767e7e;
+}
+.famous .info .title strong {
+  margin-left: 5px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #070707;
+}
+.famous .info .title::before {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background: #070707;
+}
+.famous .info .group-btn {
+  margin-top: 52px;
+  display: flex;
+  gap: 0 30px;
+}
+.famous .info button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #2ac9bf;
+  background: #2ac9bf;
+  color: #fff;
+}
+.famous .info button:hover {
+  background: #fff;
+  color: #2ac9bf;
+  cursor: pointer;
+}
+.famous .images {
+  position: relative;
+  margin-left: 72px;
+  width: 679px;
+  height: 481px;
+}
+.famous .images .main-avatar {
+  position: absolute;
+  top: 107px;
+  left: 273px;
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.famous .images .avatar-1 {
+  position: absolute;
+  top: 0;
+  left: 144px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.famous .images .avatar-2 {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.famous .images .avatar-3 {
+  position: absolute;
+  bottom: 29px;
+  right: 32px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.famous .images .avatar-4 {
+  position: absolute;
+  left: 212px;
+  bottom: 0;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.famous .images .avatar-5 {
+  position: absolute;
+  left: 0;
+  bottom: 145px;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* CTA=============================== */
+.cta {
+  background: #def6f5;
+  padding: 76px 0 88px;
+}
+.cta .cta-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta .info .desc {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: normal;
+  color: #767e7e;
+}
+.cta .cta-btn {
+  margin-right: 154px;
+}
+.cta .cta-btn:hover {
+  background: #def6f5;
+}
+/* Footer */
+.footer {
+  margin-top: 81px;
+  padding: 50px 0;
+}
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .column .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #2e2e2e;
+}
+.footer .column .list {
+  margin-top: 25px;
+}
+.footer .column li {
+  margin-top: 18px;
+}
+.footer .column .list li span {
+  color: #535353;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+.footer .column a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.footer .row:last-child {
+  margin-top: 80px;
+}
+.footer .row .copyright {
+  margin: 0 auto;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+/* =================================================================================== */
